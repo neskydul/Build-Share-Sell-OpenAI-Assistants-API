@@ -22,7 +22,7 @@ st.markdown(
 )
 
 st.set_page_config(
-    unsafe_allow_html=True
+    unsafe_allow_html=True,
     page_title="MVP",
     page_icon="🤖",
     layout="wide",
