@@ -21,19 +21,7 @@ st.set_page_config(
 )
 
 st.title("Build🚧, Share🤗 and Sell💸 OpenAI Assistants🤖")
-
-
-
-
-
-#openaiKey = st.text_input("🔑 Pls insert your OpenAI API Key")
-#if openaiKey:
-    #os.environ["OPENAI_API_KEY"] = openaiKey
-    #openai.api_key = openaiKey
-    client = openai.OpenAI()
-
-    
-
+client = openai.OpenAI()
     else:
         # Inferenza con Assistente
 
