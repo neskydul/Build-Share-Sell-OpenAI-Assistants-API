@@ -21,10 +21,10 @@ st.set_page_config(
 )
 
 st.title("Build🚧, Share🤗 and Sell💸 OpenAI Assistants🤖")
-       client = openai.OpenAI()
-        # Inferenza con Assistente
 
-        id_assistente = "asst_5zyTh15pzTB7CCC5BOT4PVcS"
+if os.environ["OPENAI_API_KEY"]:
+    client = openai.OpenAI()
+    id_assistente = "asst_5zyTh15pzTB7CCC5BOT4PVcS"
 
         if id_assistente:
             try: 
