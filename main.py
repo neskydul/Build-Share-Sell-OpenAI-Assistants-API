@@ -9,17 +9,7 @@ from inference_assistant import inference
 from utils import create_assistant_from_config_file, upload_to_openai, export_assistant
 from exportChat import export_chat
 
-st.markdown(
-    """
-    <style>
-    .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
-    .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
-    .viewerBadge_text__1JaDK {
-        display: none;
-    }
-    </style>
-    """
-)
+
 
 st.set_page_config(
     unsafe_allow_html=True,
@@ -31,6 +21,17 @@ st.set_page_config(
         #'Report a bug': "https://github.com/IntelligenzaArtificiale/Build-Share-Sell-OpenAI-Assistants-API/issues",
         #'About': "# This is a simple web app to build, share and sell OpenAI Assistants API\n\n"
     #}
+)
+st.markdown(
+    """
+    <style>
+    .css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
+    .styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
+    .viewerBadge_text__1JaDK {
+        display: none;
+    }
+    </style>
+    """
 )
 
 st.title("MVP🤖")
