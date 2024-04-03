@@ -24,7 +24,7 @@ st.set_page_config(
 st.markdown(
     """
     <style>
-    .stActionButton {
+    .stActionButton, #MainMenu, button[class^='styles_terminalButton'] {
         display: none;
     }
     </style>
