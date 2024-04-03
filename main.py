@@ -26,14 +26,14 @@ if os.environ["OPENAI_API_KEY"]:
     client = openai.OpenAI()
     id_assistente = "asst_5zyTh15pzTB7CCC5BOT4PVcS"
 
-        if id_assistente:
-            try: 
-                inference(id_assistente)
-            except Exception as e:
-                st.error("🛑 There was a problem with OpenAI Servers")
-                st.error(e)
-                if st.button("🔄 Restart"):
-                    st.rerun()
+if id_assistente:
+    try: 
+        inference(id_assistente)
+    except Exception as e:
+        st.error("🛑 There was a problem with OpenAI Servers")
+        st.error(e)
+        if st.button("🔄 Restart"):
+            st.rerun()
 
 html_chat = '<center><h6>🤗 Support the project with a donation for the development of new features 🤗</h6>'
 html_chat += '<br><a href="https://rebrand.ly/SupportAUTOGPTfree"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal donate button" /></a><center><br>'
