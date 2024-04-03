@@ -18,11 +18,11 @@ st.markdown(
         display: none;
     }
     </style>
-    """,
-    unsafe_allow_html=True
+    """
 )
 
 st.set_page_config(
+    unsafe_allow_html=True
     page_title="MVP",
     page_icon="🤖",
     layout="wide",
