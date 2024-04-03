@@ -10,17 +10,17 @@ from utils import create_assistant_from_config_file, upload_to_openai, export_as
 from exportChat import export_chat
 
 st.set_page_config(
-    page_title="Build, Share and Sell OpenAI Assistants API",
+    page_title="MVP",
     page_icon="🤖",
     layout="wide",
-    menu_items={
-        'Get Help': 'mailto:servizi@intelligenzaartificialeitalia.net',
-        'Report a bug': "https://github.com/IntelligenzaArtificiale/Build-Share-Sell-OpenAI-Assistants-API/issues",
-        'About': "# This is a simple web app to build, share and sell OpenAI Assistants API\n\n"
-    }
+    #menu_items={
+        #'Get Help': 'mailto:servizi@intelligenzaartificialeitalia.net',
+        #'Report a bug': "https://github.com/IntelligenzaArtificiale/Build-Share-Sell-OpenAI-Assistants-API/issues",
+        #'About': "# This is a simple web app to build, share and sell OpenAI Assistants API\n\n"
+    #}
 )
 
-st.title("Build🚧, Share🤗 and Sell💸 OpenAI Assistants🤖")
+st.title("MVP🤖")
 
 if os.environ["OPENAI_API_KEY"]:
     client = openai.OpenAI()
@@ -35,10 +35,10 @@ if id_assistente:
         if st.button("🔄 Restart"):
             st.rerun()
 
-html_chat = '<center><h6>🤗 Support the project with a donation for the development of new features 🤗</h6>'
-html_chat += '<br><a href="https://rebrand.ly/SupportAUTOGPTfree"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal donate button" /></a><center><br>'
-st.markdown(html_chat, unsafe_allow_html=True)
-st.write('Made with ❤️ by [Alessandro CIciarelli](https://intelligenzaartificialeitalia.net)')
+#html_chat = '<center><h6>🤗 Support the project with a donation for the development of new features 🤗</h6>'
+#html_chat += '<br><a href="https://rebrand.ly/SupportAUTOGPTfree"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="PayPal donate button" /></a><center><br>'
+#st.markdown(html_chat, unsafe_allow_html=True)
+#st.write('Made with ❤️ by [Alessandro CIciarelli](https://intelligenzaartificialeitalia.net)')
 
 def inference(id_assistente):
     if "msg_bot" not in st.session_state:
