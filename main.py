@@ -29,7 +29,7 @@ if openaiKey:
     client = openai.OpenAI()
         # Inferenza con Assistente
 
-id_assistente = "asst_6DrmaKhqvVgDRsfhttLTM0sZ"
+id_assistente = "asst_5zyTh15pzTB7CCC5BOT4PVcS"
 if id_assistente:
             try: 
                 inference(id_assistente)
