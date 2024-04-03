@@ -24,7 +24,7 @@ st.title("Build🚧, Share🤗 and Sell💸 OpenAI Assistants🤖")
 
 if os.environ["OPENAI_API_KEY"]:
     client = openai.OpenAI()
-    id_assistente = "asst_5zyTh15pzTB7CCC5BOT4PVcS"
+    id_assistente = "asst_6DrmaKhqvVgDRsfhttLTM0sZ"
 
 if id_assistente:
     try: 
