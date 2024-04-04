@@ -1,1 +1,4 @@
-
+}
+.stChatMessage:nth-child(odd) {
+    color: #777;
+}
